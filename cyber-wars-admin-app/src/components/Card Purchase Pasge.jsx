@@ -1,20 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
-const cardData = [
-  { id: 'card1', name: 'Card 1', price: 35, image: 'public/cards/Card1.png' },
-  { id: 'card2', name: 'Card 2', price: 50, image: '/cards/Card2.png' },
-  { id: 'card3', name: 'Card 3', price: 45, image: '/cards/Card3.png' },
-  { id: 'card4', name: 'Card 4', price: 40, image: '/cards/Card4.png' },
-  { id: 'card5', name: 'Card 5', price: 25, image: '/cards/Card5.png' },
-  { id: 'card6', name: 'Card 6', price: 30, image: '/cards/Card6.png' },
-  { id: 'card7', name: 'Card 7', price: 30, image: '/cards/Card7.png' },
-  { id: 'card8', name: 'Card 8', price: 35, image: '/cards/Card8.png' },
-  { id: 'card9', name: 'Card 9', price: 20, image: '/cards/Card9.png' },
-  { id: 'card10', name: 'Card 10', price: 20, image: '/cards/Card10.png' },
-  { id: 'card11', name: 'Card 11', price: 15, image: '/cards/Card11.png' },
-  { id: 'card12', name: 'Card 12', price: 0, image: '/cards/Card12.png' },
-  { id: 'card13', name: 'Card 13', price: 15, image: '/cards/Card13.png' },
-];
+import allCards from './allCards';
 
 function CardPurchasePage({ startingMoney = 1000, onReady }) {
   const [money, setMoney] = useState(startingMoney);
